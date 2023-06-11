@@ -5,13 +5,12 @@ function Panel() {
   const [visible, setVisible] = useState(true)
   return (
     <div className={`${styles.panel} ${visible ? '' : styles.close}`}>
-      <button onClick={() => visible ? setVisible(false) : setVisible(true)} className={styles.toggle}>
+      <span onClick={() => visible ? setVisible(false) : setVisible(true)} className={styles.toggle}>
         {visible
-          ? 'close'
-          : 'open'
+          ? '⇩hide'
+          : '⇧show'
         }
-      </button>
-      <h1>uma-stripe</h1>
+      </span>
       nyaan
     </div>
   )
