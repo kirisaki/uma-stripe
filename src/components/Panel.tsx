@@ -1,5 +1,6 @@
 import {useState} from 'react'
 import Characters from './Characters'
+import ColorPicker from './ColorPicker'
 import styles from './Panel.module.css'
 
 function Panel() {
@@ -13,6 +14,7 @@ function Panel() {
         }
       </span>
       <Characters />
+      <ColorPicker />
     </div>
   )
 }

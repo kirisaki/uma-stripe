@@ -3,9 +3,9 @@ import characters from '../characters'
 function Characters(){
   return (
     <>
-      <input list='characters_list' />
+      <input list='characters_list' placeholder='キャラ名を入力してください' />
       <datalist id='characters_list'>
-        {Object.entries(characters).map(kv => <option value={kv[0]} />)}
+        {Object.keys(characters).map(k => <option key={k} value={k} />)}
       </datalist>
     </>
   )

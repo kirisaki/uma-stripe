@@ -1,0 +1,13 @@
+.picker {
+  list-style: none;
+}
+
+.picker > li {
+  line-height: 3rem;
+}
+
+.slider {
+  width: 90%;
+  top: 2px;
+  position: relative;
+}
